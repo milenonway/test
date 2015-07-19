@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Table</title>
+		<style type="text/css">
+		th, td
+		{
+			border: 1px solid #666;
+		}
+
+		</style>
+	</head>
+    <body>
+		<form method="post" action="hasuiusha">
+			 <table cellspacing="0" cellpadding="3">
+			 <colgroup>
+				<col width="10"/>
+			 </colgroup>
+				<tr>
+					<th><label for="ln" >Lst Name</label></th>
+					<td colspan="3"><input type="text" id="ln" size="40"/></td>
+				</tr> 
+				<tr>
+					<th ><label for="fn">First Name</label></th>
+					<td colspan="3"><input type="text" id="fn"size="40"/></td>
+				</tr>
+				<tr>
+					<th><label for="ad">Address</label></th>
+					<td colspan="3"><textarea  rows="3" id="ad"></textarea></td>
+				</tr>
+				<tr>
+					<th><label for="ci">City</label></th>
+					<td><input type="text" id="ci"/></td>
+					<th><label for="st">State</label></th>
+					<td><input type="text" id="st" size="10"/></td>
+				</tr>
+				<tr>
+					<th><label for="pc">Postal code</label></th>
+					<td colspan="3"><input type="text" id="pc" size="40"/></td>
+				</tr>
+				<tr>
+					<th><label for="co">Country</label></th>
+					<td colspan="3">
+						<select name="Country">
+							<option  value="bg"selected>Bulgaria</option>                                                            	<option value="gr">Romania</option>
+							<option value="ro">Greece</option>
+						</select>                                                         
+					</td>
+				</tr>
+				<tr>
+					<th><label for="ph">Phone(country code, area code, number)</label></th>
+					<td colspan="3">(<input type="text"size="5"/>)<input type="text"size="5"/>-<input type="text"/> </td>
+				</tr>
+				<tr>
+					<th><label for="em">E-mail</label></th>
+					<td colspan="3"><input type="email" id="em"size="40"/></td>
+				</tr>
+				<tr>
+					<th><label>Birth date</label></th>
+					<td colspan="3">
+						<label for="bd">Day</label><input type="number" min="1" max="31" id="bd" size="2" />
+						<label for="bm">Month</label><input type="number" min="1" max="12" id="bm"  size="2"/>
+						<label for="by">Year</label><input type="text" id="by" size="4"/>
+					</td>
+				</tr>
+				 <tr>
+					<th><label for="co">Sex</label></th>
+					<td colspan="3">
+						<select name="gender">
+							<option  value="m"selected>male</option>   
+							<option value="f">female</option>
+						</select>                                                         
+					</td>
+				</tr>
+				<tr>
+					<th><label>Starting date</label></th>
+					<td colspan="3">
+						<input type="radio" name="date" value="spring"id="sd"/>
+						<label for="sd">spring 2012</label>
+						<input type="radio" name="date" value="winter" id="wd"/>
+						<label for="wd">winter 2012</label>
+					</td>
+				</tr>
+			    <tr>
+					<th><label for="cm">Comments</label></th>
+					<td colspan="3"><textarea  rows="3" id="co"></textarea></td>
+				</tr>
+				<tr>
+					<th colspan="4">
+						<input type="submit" value="send form">
+						<input type="reset" value="clear form">
+					</th>
+				</tr> 
+					
+			 </table>
+		</form>			 
+	</body>    
+</html>
